@@ -11,13 +11,12 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Image(systemName: "sun.max.fill").font(.system(size: 60))
-                .offset(CGSize(width: 120.0, height: -130))
+                .offset(CGSize(width: 120.0, height: -80))
                 .foregroundStyle(.yellow)
             Image(systemName: "car")
                 .resizable()
                 .scaledToFit()
-            Text("Mini Car").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                .frame(width: 200, height: 50)
+            Image(systemName: "road.lanes").font(.system(size: 350))
         }
         .foregroundStyle(LinearGradient(colors: [.red, .mint, .purple], startPoint: .leading, endPoint: .trailing))
         .padding()
