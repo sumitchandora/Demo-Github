@@ -10,11 +10,13 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Image(systemName: "car")
+                .resizable()
+                .scaledToFit()
+            Text("Mini Car").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                .frame(width: 200, height: 50)
         }
+        .foregroundStyle(LinearGradient(colors: [.red, .mint, .purple], startPoint: .leading, endPoint: .trailing))
         .padding()
     }
 }
