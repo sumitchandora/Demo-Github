@@ -13,6 +13,7 @@ struct ContentView: View {
             Image(systemName: "sun.max.fill").font(.system(size: 60))
                 .offset(CGSize(width: 120.0, height: -80))
                 .foregroundStyle(.yellow)
+            Image(systemName: "externaldrive.connected.to.line.below").font(.largeTitle)
             Image(systemName: "car")
                 .resizable()
                 .scaledToFit()
